@@ -1,4 +1,7 @@
 <table>
+    <style>
+        tr:nth-child(even) {background-color: plum}
+    </style>
     <tr class="header-row">
         <th (click)="sort('name')" class="sortable">Name</th>
         <th (click)="sort('type')" class="sortable">Type</th>
@@ -13,6 +16,7 @@
         <td>{{satellite.orbitType}}</td>
         <td>{{satellite.launchDate}}</td>
     </tr>
+
 </table>
 <!-- TODO 2b: use *ngFor to display satellite data in the table -->
 <!-- TODO 3b: add style directive to conditionally highlight satellite type -->
